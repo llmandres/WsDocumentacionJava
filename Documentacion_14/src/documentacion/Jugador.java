@@ -1,11 +1,29 @@
 package documentacion;
 
+/**
+ * La clase Jugador tiene un atributo entero dorsal, un atributo entero 
+ * numeroTarjetasAmarillas y un atributo entero numeroTarjetasRojas.
+ * Atributos que representan el historial de un Jugador.
+ * 
+ */
 public class Jugador {
 
+	/**
+	 * Atributo entero cuyo valor representa el dorsal que usa el Jugador
+	 * 
+	 */
 	private int dorsal;
-
+	
+	/**
+	 * Atributo entero cuyo valor representa el numero de tarjetas amarillas
+	 * que el Jugador tiene.
+	 */
 	private int numeroTarjetasAmarillas;
-
+	
+	/**
+	 * Atributo entero cuyo valor representa el numero de tarjetas rojas
+	 * que el Jugador tiene.
+	 */
 	private int numeroTarjetasRojas;
 
 	public int getDorsal() {
@@ -33,7 +51,16 @@ public class Jugador {
 	}
 
 	
-	
+	/**
+	 * En este metodo se introduce por parametro el valor para el atributo 'dorsal',
+	 * este valor introducido por parametro se establecera como el del atributo 'dorsal'
+	 * si esta entre el rango de numero 1 a 30 incluidos, en caso de que esten fuera de 
+	 * este rango el atributo 'dorsal' se establecera en el valor -1.
+	 * 
+	 * 
+	 * @param Numero entero que se establecera como valor del atributo dorsal del jugador 
+	 * que invoque el metodo siempre y cuando este entre el rango de numero 1 a 30 incluidos.
+	 */
 	public void ponerDorsal(int dorsal) {
 
 		if (dorsal >= 1 && dorsal <= 30) {
@@ -48,6 +75,20 @@ public class Jugador {
 
 	}
 
+	/**
+	 * Este metodo devuelve un 'true' o 'false' en base a los atributos
+	 *  numeroTarjetasAmarillas y numeroTarjetasRojas que el objeto jugador 
+	 *  tenga.Se inicializa la variable 'expulsado' en false, el valor de esta
+	 *  variable sera true si el objeto Jugador tiene como valor '2' en el
+	 *  atributo 'numeroTarjetasAmarillas' o si el objeto jugador tiene como valor
+	 *  '1' en el atributo 'numeroTarjetasRojas', finalmente se devolvera el valor 
+	 *  de la variable.
+	 * 
+	 * 
+	 * @return la variable booleana inicializada como 'false' y que sera 'true' en 
+	 * en base a los atributos 'numeroTarjetasAmarillas' y 'numeroTarjetasRojas' del
+	 * objeto Jugador. 
+	 */
 	public boolean estaExpulsado() {
 
 		boolean expulsado = false;
