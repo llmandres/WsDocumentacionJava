@@ -1,11 +1,27 @@
 package documentacion;
 
+/**
+ * Clase que representa un jugador con tres atributos, numeroTarjetasAmarillas y
+ * numeroTarjetasRojas.
+ * 
+ * Se usara para determinar las estadisticas de los jugadores.
+ */
+
 public class Jugador {
-
+	/**
+	 * Numero del dorsal que llevara el jugador
+	 * estando entre en 1 y el 30 incluidos
+	 */
 	private int dorsal;
-
+/**
+ * Determinara la expulsion de un jugador con su numero 
+ * maximo de tarjetas amarillas 2
+ */
 	private int numeroTarjetasAmarillas;
-
+/**
+ * Determinara la expulsion de un jugador con su numero 
+ * maximo de tarjetas rojas 1
+ */
 	private int numeroTarjetasRojas;
 
 	public int getDorsal() {
@@ -32,8 +48,12 @@ public class Jugador {
 		this.numeroTarjetasRojas = numeroTarjetasRojas;
 	}
 
-	
-	
+	/**
+	 * Metodo que añade el dorsal que se pasa por parametro si es mayor o igual que
+	 * 1 y es igual o menor que 30. En el caso de que no el dorsal sera de -1.
+	 * 
+	 * @param Dorsal que se introduce por parametro.
+	 */
 	public void ponerDorsal(int dorsal) {
 
 		if (dorsal >= 1 && dorsal <= 30) {
@@ -48,6 +68,12 @@ public class Jugador {
 
 	}
 
+	/**
+	 * Metodo que verifica si el jugador esta expulsado. En el caso de que tenga 2
+	 * amarillas lo estara o si tiene 1 tarjeta roja, por lo contrario no lo estara.
+	 * 
+	 * @return Si el jugador esta expulsado true si lo esta y false si no lo esta.
+	 */
 	public boolean estaExpulsado() {
 
 		boolean expulsado = false;
