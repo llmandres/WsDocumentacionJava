@@ -13,21 +13,22 @@ public class Soldado {
 	 * Atributo booleano que representa si el soldado esta vivo, dependiendo si este atributo
 	 * tiene valor 'true' o 'false'
 	 * 
-	 * @author Andres
 	 */
 	private boolean estaMuerto;
 
 	/**
 	 * Atributo entero, que contiene el valor del numero de balas que tiene.
 	 * 
-	 * @author Andres
 	 */
+
+
 	private int numeroBalas;
 
 	
 	public boolean isEstaMuerto() {
 		return estaMuerto;
 	}
+
 
 	public void setEstaMuerto(boolean estaMuerto) {
 		this.estaMuerto = estaMuerto;
@@ -43,6 +44,7 @@ public class Soldado {
 
 	
 	/**
+<<<<<<< HEAD
 	 * Este método devuelve 'true' o 'false' si el objeto Soldado puede disparar o no
 	 * .Si el valor del atributo 'numeroBalas' es mayor a 0 sera 'true' por lo tanto podrá
 	 * disparar, en caso de que el valor del atributo 'numeroBalas' se menor a 0 devolvera
@@ -51,8 +53,8 @@ public class Soldado {
 	 * @return devuelve 'true' o 'false' dependiendo si el valor del atributo numeroBalas es 
 	 * mayor a 0 devolviendo true, o menor a 0 devolviendo false.
 	 * 
-	 * @author Andres
 	 */
+
 	public boolean puedeDisparar() {
 
 		if (this.numeroBalas > 0) {
@@ -66,6 +68,7 @@ public class Soldado {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * En este método se introduce por parametro un objeto soldado,las balas del objeto soldado
 	 * que invoca el método seran reducidas en 1 , posteriormente, el valor del atributo 'estaMuerto'
 	 * del objeto soldado introducido por parametro se establecera como 'true'

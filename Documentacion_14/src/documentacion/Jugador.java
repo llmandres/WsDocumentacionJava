@@ -1,10 +1,11 @@
 package documentacion;
 
 /**
- * La clase Jugador tiene un atributo entero dorsal, un atributo entero 
- * numeroTarjetasAmarillas y un atributo entero numeroTarjetasRojas.
- * Atributos que representan el historial de un Jugador.
- * 
+
+ * La clase jugador contiene al objeto jugador cuyos atributos son
+ * el numero de dorsal, numero de tarjetas amarillas, y numero de tarjetas rojas.
+ * Tiene dos metodos, uno para ingresar el numero de dorsal del jugador, y otro para 
+ * saber si el jugador esta expulsado.
  */
 public class Jugador {
 
@@ -23,6 +24,10 @@ public class Jugador {
 	/**
 	 * Atributo entero cuyo valor representa el numero de tarjetas rojas
 	 * que el Jugador tiene.
+
+
+	/**
+	 * Atributo de tipo int que representa el numero de tarjetas rojas del jugador
 	 */
 	private int numeroTarjetasRojas;
 
@@ -52,6 +57,7 @@ public class Jugador {
 
 	
 	/**
+<<<<<<< HEAD
 	 * En este metodo se introduce por parametro el valor para el atributo 'dorsal',
 	 * este valor introducido por parametro se establecera como el del atributo 'dorsal'
 	 * si esta entre el rango de numero 1 a 30 incluidos, en caso de que esten fuera de 
