@@ -99,13 +99,13 @@ public class Jugador {
 
 		boolean expulsado = false;
 
-		if (numeroTarjetasAmarillas == 2) {
+		if (numeroTarjetasAmarillas >= 2) {
 
 			expulsado = true;
 
 		}
 
-		if (numeroTarjetasRojas == 1) {
+		if (numeroTarjetasRojas >= 1) {
 
 			expulsado = true;
 
